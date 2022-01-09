@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>案件アサイン｜BlueDolphin</title>
+        <link rel="stylesheet" type="text/css" href="./index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body class="body">
+        <div class="sub_header">
+            <span class="name">ログイン中：administrator</span>
+            <a href="#" class="logout">ログアウト</a>
+        </div>
+        <div class="main_header">
+            <h1 class="title">BlueDolphin</h1>
+            <main class="p-3">
+                <ul class="nav nav-tabs" style="margin-left: 130px; margin-top: -46px;">
+                    <li class="nav-item">
+                        <a href="#tab1" class="nav-link">勤怠打刻</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab2" class="nav-link">勤務表</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab3" class="nav-link">経費精算</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab4" class="nav-link">各種申請</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab5" class="nav-link">在宅勤務申請</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab6" class="nav-link">承認却下</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab7" class="nav-link">アカウント追加</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab8" class="nav-link active">アカウント削除</a>
+                    </li>
+                </ul>
+            </main>
+        </div>
+        <div class="tab-content">
+            <div id="tab1" class="tab-pane"></div>
+            <div id="tab2" class="tab-pane"></div>
+            <div id="tab3" class="tab-pane"></div>
+            <div id="tab4" class="tab-pane"></div>
+            <div id="tab5" class="tab-pane"></div>
+            <div id="tab6" class="tab-pane"></div>
+            <div id="tab7" class="tab-pane"></div>
+            <div id="tab8" class="tab-pane active">
+                <h2 align="center" class="head2">アカウント削除</h2>
+                <h5 align="center" class="head5">以下の従業員の情報を全て削除いたします。<br>よろしいでしょうか。</h5>
+                <form action="#" method="post">
+                    <div align="center">
+                        <table class="table1">
+                            <tr class="table1_tr1">
+                                <td class="table1_tr1_td1" align="right" width="420">社員番号　</td>
+                                <td class="table1_tr1_td2">101</td>
+                            </tr>
+                            <tr class="table1_tr1">
+                                <td class="table1_tr1_td1" align="right" width="420">社員名　</td>
+                                <td class="table1_tr1_td2">黒石　魁</td>
+                            </tr>
+                            <tr class="table1_tr1">
+                                <td class="table1_tr1_td1" align="right" width="420">メールアドレス　</td>
+                                <td class="table1_tr1_td2">k.kurosihi@bluedolphin.co.jp</td>
+                            </tr>
+                            <tr class="table1_tr1">
+                                <td class="table1_tr1_td1" align="right" width="420">ユーザ種別　</td>
+                                <td class="table1_tr1_td2">一般ユーザ</td>
+                            </tr>
+                        </table>
+                        <input type="button" class="button_cancel" value="キャンセル" onclick="location.href='#'">
+                        <input type="submit" class="submit_delete" value="削除">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
