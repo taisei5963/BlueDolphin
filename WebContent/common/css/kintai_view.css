@@ -1,0 +1,117 @@
+.sub_header{
+	background-color: darkblue;
+	text-align: right;
+	width: 100%;
+	height: 6mm;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+}
+span.name{
+	font-family: 'MS UI Gothic';
+	color: white;
+	margin-right: 20px;
+}
+.logout{
+	color: white;
+	margin-right: 10px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.logout:hover{
+	background-color: darkblue;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+.main_header{
+	width: 100%;
+	background-color: rgb(203, 228, 250);
+	height: 15mm;
+	margin-top: 6mm;
+	margin-left: 0mm;
+	position: fixed;
+	z-index: 999;
+}
+h1.title{
+	font-family: 'Amatic SC', cursive;
+	font-size: 18pt;
+	color: darkblue;
+	margin-left: 10px;
+	margin-top: 8px;
+}
+.nav-link{
+	color: darkblue;
+}
+.nav-link:hover{
+	background-color: rgba(0, 0, 170, 0.2);
+	color: darkblue;
+}
+.pulldownSubList{
+	height: 8mm;
+	width: 35mm;
+	font-size: 12pt;
+	background-color: rgb(203, 228, 250);
+	color: navy;
+	border-radius: 2mm;
+	margin-top: 23mm;
+	margin-left: 2mm;
+}
+.lastMonth{
+	position: relative;
+	left: 41mm;
+	top: -6.8mm;
+	color: darkblue;
+}
+
+.nextMonth{
+	position: relative;
+	left: 54mm;
+	top: -13mm;
+	color: darkblue;
+}
+table{
+	border: 0.1px solid black;
+	border-collapse:collapse;
+	margin-top: -10mm;
+	margin-left: 2mm;
+	margin-bottom: 2mm;
+	width: 99%;
+	position: relative;
+}
+table th{
+	text-align: center;
+	color: navy;
+}
+table td {
+	border-style: dotted solid;
+	height: 10px;
+}
+.StartTime{
+	text-align: center;
+	background-color: #FFF;
+	padding: 2px 7px;
+	border-radius: 3px;
+	border-color: hsla(0, 0%, 0%, 0.55);
+	border-width: thin;
+	cursor: text;
+}
+.EndTime{
+	text-align: center;
+	background-color: #FFF;
+	padding: 2px 7px;
+	border-radius: 3px;
+	border-color: hsla(0, 0%, 0%, 0.55);
+	border-width: thin;
+	cursor: text;
+}
+.kosu_plus{
+	text-decoration: none;
+	color: black;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 50%;
+	padding: 1mm;
+	position: relative;
+	top: 0.7mm;
+}
