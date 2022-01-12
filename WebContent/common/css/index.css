@@ -1,0 +1,99 @@
+body{
+    position: relative;
+    background-image:url("../images/Sky.jpg");
+    background-repeat: no-repeat; 
+    background-position: left top;
+    background-size: 100vw auto;			/* 横幅　高さの順に指定 */
+}
+
+div.body_div1{
+    width: 520px;
+    height: 420px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 140px;
+    margin-left: -250px;
+	border-radius: 2mm;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+img.body_img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: -2mm;
+}
+	
+p.body_title{
+    position: relative;
+    font-family: 'Amatic SC', cursive;
+    font-size: 32px;
+    color: blue;
+    text-align: center;
+    top: -15mm;
+}
+
+table.body_table{
+    position: relative;
+    top: -20mm;
+}
+
+span.body_table_tr1_td_span{
+    position: relative;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+
+input.body_table_tr2_td_input{
+    position: relative;
+    background-color: rgb(203, 228, 250);
+    border-radius: 1mm;
+    height: 23px;
+}
+
+span.body_table_tr3_td_span{
+    position: relative;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+
+input.body_table_tr4_td_input{
+    position: relative;
+    background-color: rgb(203, 228, 250);
+    border-radius: 1mm;
+    height: 23px;
+}
+
+span.body_table_tr5_td_span{
+    position: relative;
+    font-size: 13px;
+}
+
+input.body_table_tr6_td_input{
+    position: relative;
+    cursor: pointer;
+    background-color: navy;
+    color: white;
+    border-color: navy;
+    border-radius: 2mm;
+    height: 10mm;
+    top: 5mm;
+    width: 90%;
+    font-size: 14pt;
+}
+
+hr{
+    position: relative;
+    top: -13mm;
+    width: 90%;
+}
+
+a.body_a{
+    position: relative;
+    top: -15mm;
+    text-decoration: none;
+    color: navy;
+    font-size: 14pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
