@@ -195,7 +195,6 @@
 					</select>
 				</form>
 <<<<<<< HEAD
-				<%-- <a class="lastMonth" href="./LastNextMonthServlet?thisMonth=<%= thisMonth %>&ChoiceMonth=前月処理">前月</a> --%>
 				<form action="LastNextMonthServlet" name="LastMonth" method="post">
 					<% session.setAttribute("thisMonth", thisMonth); %>
 					<button name="ChoiceMonth" value="前月処理" class="lastMonth">前月</button>
