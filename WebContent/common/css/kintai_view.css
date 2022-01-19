@@ -60,20 +60,44 @@ h1.title{
 }
 .lastMonth{
 	position: relative;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 80f4a86bad305c84e2cd09af0161f2a67ca996e3
 	left: 150px;
 	top: -30px;
 	background-color: darkblue;
 	color: white;
 	border-radius: 5px;
+<<<<<<< HEAD
+=======
+=======
+	left: 41mm;
+	top: -6.8mm;
+	color: darkblue;
+>>>>>>> 80cffd47c5175d81e090e931f673087ded55d4bc
+>>>>>>> 80f4a86bad305c84e2cd09af0161f2a67ca996e3
 }
 
 .nextMonth{
 	position: relative;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 80f4a86bad305c84e2cd09af0161f2a67ca996e3
 	left: 210px;
 	top: -60px;
 	background-color: darkblue;
 	color: white;
 	border-radius: 5px;
+<<<<<<< HEAD
+=======
+=======
+	left: 54mm;
+	top: -13mm;
+	color: darkblue;
+>>>>>>> 80cffd47c5175d81e090e931f673087ded55d4bc
+>>>>>>> 80f4a86bad305c84e2cd09af0161f2a67ca996e3
 }
 table{
 	border: 0.1px solid black;
