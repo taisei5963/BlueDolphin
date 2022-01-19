@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration>
+<Configuration status="ALL">
+	<Properties>
+		<Property name="name">hoge</Property>
+		<Property name="ptn" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-6p %c{10} %m%n" />
+	</Properties>
+	<Appenders>
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout pattern="${ptn}" />
+		</Console>
+		<RollingFile name="file"
+				fileName="/Applications/Eclipse_2021-03.app/Contents/workspace/BlueDolphin/logs/${date:yyyyMMdd}.log"
+                filePattern="./logs/%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss.SSS}]&#x9;%-5p&#x9;%C&#x9;%M&#x9;line:%L&#x9;%m%n"/>
+            <Policies>
+                <OnStartupTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="100 KB" />
+            </Policies>
+            <DefaultRolloverStrategy max="5"/>
+        </RollingFile>
+	</Appenders>
+	<Loggers>
+		<Root level="all">
+			<AppenderRef ref="console" />
+			<AppenderRef ref="file" />
+		</Root>
+	</Loggers>
+</Configuration>

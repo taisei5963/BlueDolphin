@@ -1,0 +1,157 @@
+.body{
+	background-color: #eee;
+}
+
+.sub_header{
+	text-align: right;
+	background-color: darkblue;
+	width: 100%;
+	height: 6mm;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+}
+
+.name{
+	color: white;
+	margin-right: 20px;
+}
+
+.logout{
+	color: white;
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+.logout:hover{
+	background-color: darkblue;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.main_header{
+	width: 100%;
+	background-color: rgb(203, 228, 250);
+	height: 15mm;
+	position: fixed;
+	top: 6mm;
+	left: 0mm;
+	z-index: 998;
+}
+
+h1.title{
+	font-family: 'Amatic SC', cursive;
+	font-size: 18pt;
+	color: darkblue;
+	margin-left: 10px;
+	margin-top: 8px;
+}
+
+.nav-link{
+	color: darkblue;
+}
+
+.nav-link:hover{
+	background-color: rgba(0, 0, 170, 0.2);
+	color: darkblue;
+}
+
+.head2{
+	margin-top: 30mm;
+	font-family: "ＭＳ 明朝";
+	font-weight: 700;
+}
+
+.head5{
+	margin-top: 20px;
+	font-family: "ＭＳ 明朝";
+	font-weight: 700;
+	color: red;
+}
+
+.link1{
+	position: relative;
+	top: 85px;
+	left: 5px;
+}
+
+.link1:hover{
+	text-decoration: none;
+}
+
+.link2{
+	position: relative;
+	top: 85px;
+	left: 10px;
+}
+
+.link2:hover{
+	text-decoration: none;
+}
+
+.table1{
+	top: 20px;
+	z-index: 1;
+	position: relative;
+}
+
+.table1_tr1_td2{
+	padding: 3px;
+}
+
+.table1_tr1_td4{
+	padding: 3px
+}
+
+.submit_registration{
+	margin-top: 40px;
+	margin-left: 10px;
+	background-color: navy;
+	color: #fff;
+	border-color: navy;
+	width: 100px;
+	height: 40px;
+	font-size: 20px;
+	border-radius: 8px;
+}
+
+.button_cancel{
+	margin-top: 40px;
+	margin-left: 10px;
+	background-color: #fff;
+	color: navy;
+	border-color: #fff;
+	width: 120px;
+	height: 40px;
+	font-size: 20px;
+	border-radius: 8px;
+}
+
+img.ui-datepicker-trigger{
+	cursor: pointer;
+	margin-left: 5px!important;
+	margin-top: -5px!important;
+	vertical-align: middle;
+	width: 25px;
+	height: 25px;
+}
+
+.table1_tr2_td2_select{
+	width: 100%;
+}
+
+.table1_tr2_td6_select{
+	width: 100%;
+}
+
+.table1_tr2_td4_text{
+	width: 100%;
+}
+
+.table1_tr2_td4_submit{
+	background-color: cornflowerblue;
+	border-color: cornflowerblue;
+	color: #fff;
+}
