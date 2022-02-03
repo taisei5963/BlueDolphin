@@ -185,6 +185,7 @@ h1.title{
 	width: 80%;
 }
 
+<<<<<<< HEAD
 .button_back{
 	background-color: lightgray;
 	border-color: lightgray;
@@ -198,6 +199,8 @@ h1.title{
 	font-size: 14pt;
 }
 
+=======
+>>>>>>> 4bd00e31ee62b9ada2d652191e6b8e9778f9cdcd
 .button_addition{
 	background-color: aliceblue;
 	border-color: aliceblue;
@@ -206,7 +209,10 @@ h1.title{
 	width: 6%;
 	position: relative;
 	top: 100px;
+<<<<<<< HEAD
 	left: 40px;
+=======
+>>>>>>> 4bd00e31ee62b9ada2d652191e6b8e9778f9cdcd
 	width: 10%;
 	height: 10mm;
 	font-size: 14pt;
@@ -220,7 +226,11 @@ h1.title{
 	width: 6%;
 	position: relative;
 	top: 100px;
+<<<<<<< HEAD
 	left: 50px;
+=======
+	left: 10px;
+>>>>>>> 4bd00e31ee62b9ada2d652191e6b8e9778f9cdcd
 	width: 10%;
 	height: 10mm;
 	font-size: 14pt;

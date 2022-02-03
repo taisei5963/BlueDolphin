@@ -60,20 +60,56 @@ h1.title{
 }
 .lastMonth{
 	position: relative;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 80f4a86bad305c84e2cd09af0161f2a67ca996e3
+>>>>>>> 4bd00e31ee62b9ada2d652191e6b8e9778f9cdcd
 	left: 150px;
 	top: -30px;
 	background-color: darkblue;
 	color: white;
 	border-radius: 5px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+	left: 41mm;
+	top: -6.8mm;
+	color: darkblue;
+>>>>>>> 80cffd47c5175d81e090e931f673087ded55d4bc
+>>>>>>> 80f4a86bad305c84e2cd09af0161f2a67ca996e3
+>>>>>>> 4bd00e31ee62b9ada2d652191e6b8e9778f9cdcd
 }
 
 .nextMonth{
 	position: relative;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 80f4a86bad305c84e2cd09af0161f2a67ca996e3
+>>>>>>> 4bd00e31ee62b9ada2d652191e6b8e9778f9cdcd
 	left: 210px;
 	top: -60px;
 	background-color: darkblue;
 	color: white;
 	border-radius: 5px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+	left: 54mm;
+	top: -13mm;
+	color: darkblue;
+>>>>>>> 80cffd47c5175d81e090e931f673087ded55d4bc
+>>>>>>> 80f4a86bad305c84e2cd09af0161f2a67ca996e3
+>>>>>>> 4bd00e31ee62b9ada2d652191e6b8e9778f9cdcd
 }
 table{
 	border: 0.1px solid black;
@@ -99,7 +135,11 @@ table td {
 	border-radius: 3px;
 	border-color: hsla(0, 0%, 0%, 0.55);
 	border-width: thin;
+<<<<<<< HEAD
 	cursor: pointer;
+=======
+	cursor: text;
+>>>>>>> 4bd00e31ee62b9ada2d652191e6b8e9778f9cdcd
 }
 .EndTime{
 	text-align: center;
@@ -108,13 +148,21 @@ table td {
 	border-radius: 3px;
 	border-color: hsla(0, 0%, 0%, 0.55);
 	border-width: thin;
+<<<<<<< HEAD
+=======
+	cursor: text;
+>>>>>>> 4bd00e31ee62b9ada2d652191e6b8e9778f9cdcd
 }
 .kosu_plus{
 	text-decoration: none;
 	color: black;
 	background-color: rgba(0, 0, 0, 0.3);
 	border-radius: 50%;
+<<<<<<< HEAD
 	padding: 5px;
+=======
+	padding: 1mm;
+>>>>>>> 4bd00e31ee62b9ada2d652191e6b8e9778f9cdcd
 	position: relative;
 	top: 0.7mm;
 }

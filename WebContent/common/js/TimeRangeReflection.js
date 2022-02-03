@@ -15,7 +15,11 @@ document.addEventListener('click', function(e){
         button[i] = document.getElementById('button_id_' + (i+1));
     }
     var target = e.target;
+<<<<<<< HEAD
     if(target.tagName == 'button' && target.type == "button"){
+=======
+    if(target.tagName == 'BUTTON' && target.type == "button"){
+>>>>>>> 4bd00e31ee62b9ada2d652191e6b8e9778f9cdcd
         switch(target.id){
             case 'button_id_1':
                 if(button[0].style.backgroundColor == 'rgb(220, 220, 220)'){
