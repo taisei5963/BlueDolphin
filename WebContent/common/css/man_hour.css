@@ -1,0 +1,240 @@
+.sub_header{
+	background-color: darkblue;
+	text-align: right;
+	width: 100%;
+	height: 6mm;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+}
+span.name{
+	font-family: 'MS UI Gothic';
+	color: white;
+	margin-right: 20px;
+}
+.logout{
+	color: white;
+	margin-right: 10px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.logout:hover{
+	background-color: darkblue;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+.main_header{
+	width: 100%;
+	background-color: rgb(203, 228, 250);
+	height: 15mm;
+	margin-top: 6mm;
+	margin-left: 0mm;
+	position: fixed;
+	z-index: 998;
+}
+h1.title{
+	font-family: 'Amatic SC', cursive;
+	font-size: 18pt;
+	color: darkblue;
+	margin-left: 10px;
+	margin-top: 8px;
+}
+.nav-link{
+	color: darkblue;
+}
+.nav-link:hover{
+	background-color: rgba(0, 0, 170, 0.2);
+	color: darkblue;
+}
+.table1{
+	border-collapse: collapse;
+	width: 90%;
+	z-index: 1;
+	border: 1px solid black;
+	position: relative;
+	top: 25mm;
+	overflow-x: scroll;
+}
+
+.table1_tr1_td1{
+	position: relative;
+	background-color: darkblue;
+	color: white;
+	border: 1px solid black;
+}
+
+.table1_tr3{
+	position: relative;
+	background-color: aliceblue;
+	border-top: 1px solid black;
+	border-bottom: none;
+	text-align: center;
+}
+
+.table1_tr3_th1{
+	position: relative;
+}
+
+.table1_tr3_th3{
+	position: relative;
+}
+
+.table1_tr3_th4{
+	position: relative;
+}
+
+.table1_tr3_th5{
+	position: relative;
+}
+
+.table1_tr4{
+	position: relative;
+	background-color: aliceblue;
+	border-bottom: 1px solid black;
+	text-align: center;
+	width: 100%;
+	height: 20px;
+}
+
+.table1_tr4_th1{
+	position: relative;
+}
+
+.table1_tr5_td1{
+	position: relative;
+}
+
+.table1_tr5_td2{
+	position: relative;
+}
+
+.table1_tr5_td3{
+	position: relative;
+}
+
+.table1_tr5_td4{
+	position: relative;
+}
+
+.table1_tr5_td5{
+	position: relative;
+}
+
+.table1_tr5_td6{
+	position: relative;
+}
+
+.table1_tr5_td7{
+	position: relative;
+}
+
+.range_plus{
+	position: relative;
+	top: 0.3mm;
+	height: 6mm;
+	width: 6mm;
+	background-color: lightblue;
+	border-color: lightblue;
+	border-radius: 3px;
+}
+
+.range_minus{
+	position: relative;
+	top: 0.3mm;
+	height: 6mm;
+	width: 6mm;
+	background-color: lightblue;
+	border-color: lightblue;
+	border-radius: 3px;
+}
+
+.span_range_plus{
+	position: relative;
+	top: -4.5px;
+	left: -3.5px;
+}
+
+.span_range_minus{
+	position: relative;
+	top: -4.5px;
+	left: -3.5px;
+}
+
+.table1_tr5{
+	position: relative;
+	text-align: center;
+}
+
+.table1_tr5:nth-child(odd){
+	background-color: #eee;
+}
+
+.table1_tr5_td6_button{
+	width: 15mm;
+	height: 7.5mm;
+	border-width: 1px;
+	background-color: #DCDCDC;
+	border-color: #000;
+	border-radius: 3px;
+	position: relative;
+}
+
+.table1_tr5_td1_range{
+	width: 80%;
+}
+
+.button_back{
+	background-color: lightgray;
+	border-color: lightgray;
+	color: navy;
+	border-radius: 5px;
+	width: 6%;
+	position: relative;
+	top: 100px;
+	width: 10%;
+	height: 10mm;
+	font-size: 14pt;
+}
+
+.button_addition{
+	background-color: aliceblue;
+	border-color: aliceblue;
+	color: navy;
+	border-radius: 5px;
+	width: 6%;
+	position: relative;
+	top: 100px;
+	left: 40px;
+	width: 10%;
+	height: 10mm;
+	font-size: 14pt;
+}
+
+.submit_register{
+	background-color: navy;
+	border-color: navy;
+	color: aliceblue;
+	border-radius: 5px;
+	width: 6%;
+	position: relative;
+	top: 100px;
+	left: 50px;
+	width: 10%;
+	height: 10mm;
+	font-size: 14pt;
+}
+
+.delete{
+	background-color: #FFA07A;
+	border-color: #FFA07A;
+	border-radius: 2px;
+	width: 100%;
+}
+
+.slider_div{
+	position: relative;
+	top: -4mm;
+	left: 55px;
+}

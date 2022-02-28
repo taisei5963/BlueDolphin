@@ -1,0 +1,158 @@
+.body{
+	background-color: #eee;
+}
+
+.sub_header{
+	text-align: right;
+	background-color: darkblue;
+	width: 100%;
+	height: 6mm;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+}
+
+.name{
+	color: white;
+	margin-right: 20px;
+}
+
+.logout{
+	color: white;
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+.logout:hover{
+	background-color: darkblue;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.main_header{
+	width: 100%;
+	background-color: rgb(203, 228, 250);
+	height: 15mm;
+	position: fixed;
+	top: 6mm;
+	left: 0mm;
+	z-index: 998;
+}
+
+h1.title{
+	font-family: 'Amatic SC', cursive;
+	font-size: 18pt;
+	color: darkblue;
+	margin-left: 10px;
+	margin-top: 8px;
+}
+
+.nav-link{
+	color: darkblue;
+}
+
+.nav-link:hover{
+	background-color: rgba(0, 0, 170, 0.2);
+	color: darkblue;
+}
+
+.link1{
+	position: relative;
+	top: 90px;
+	left: 10px;
+	font-size: 24px;
+}
+
+.context{
+	margin-top: 65px;
+	font-weight: 700;
+	font-family: "ＭＳ 明朝";
+}
+
+.content1{
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+.table1{
+	position: relative;
+	top: 10px;
+	left: 10px;
+	text-align: center;
+	width: 70%;
+}
+
+.table1_tr1_th7{
+	width: 600px;
+}
+
+.table1_tr2_td7{
+	text-align: left;
+}
+
+.submit_print{
+	background-color: rgb(204, 255, 204);
+	border-color: rgb(204, 255, 204);
+	color: #000;
+	border-radius: 7px;
+	font-size: 22px;
+	width: 120px;
+	height: 50px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.table2{
+	position: relative;
+	top: 15px;
+	left: 10px;
+	width: 70%;
+}
+
+.table2_tr1_th1{
+	text-align: right;
+}
+
+.table2_tr2_th1{
+	text-align: right;
+}
+
+.table2_tr3_th1{
+	text-align: right;
+}
+
+.table2_tr1_td1{
+	text-align: right;
+	width: 525px;
+}
+
+.table2_tr2_td1{
+	text-align: right;
+}
+
+.submit_appoval{
+	background-color: #005183;
+	border-color: #005183;
+	color: #fff;
+	border-radius: 7px;
+	font-size: 22px;
+	width: 120px;
+	height: 50px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.display_date_select{
+	border: 5px solid rgb(190, 230, 251);
+	height: 35px;
+	width: 120px;
+	border-radius: 10px;
+	background-color: rgb(190, 230, 251);
+}
+
+.table2_tr5_td1_textarea{
+	width: 100%;
+	border-color: black;
+}

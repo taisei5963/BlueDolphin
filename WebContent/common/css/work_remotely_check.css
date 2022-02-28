@@ -1,0 +1,292 @@
+.sub_header{
+	text-align: right;
+	background-color: darkblue;
+	width: 100%;
+	height: 6mm;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+}
+
+.name{
+	color: white;
+	margin-right: 20px;
+}
+
+.logout{
+	color: white;
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+.logout:hover{
+	background-color: darkblue;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.main_header{
+	width: 100%;
+	background-color: rgb(203, 228, 250);
+	height: 15mm;
+	position: fixed;
+	top: 6mm;
+	left: 0mm;
+	z-index: 998;
+}
+
+h1.title{
+	font-family: 'Amatic SC', cursive;
+	font-size: 18pt;
+	color: darkblue;
+	margin-left: 10px;
+	margin-top: 8px;
+}
+
+.nav-link{
+	color: darkblue;
+}
+
+.nav-link:hover{
+	background-color: rgba(0, 0, 170, 0.2);
+	color: darkblue;
+}
+
+.head4{
+	margin-left: 10px;
+	margin-top: 90px;
+	font-family: "ピラノギ角ゴStdN";
+	font-weight: 700;
+	color: blue;
+}
+
+.content1{
+	margin-left: 10px;
+	font-size: 14px;
+}
+
+.table1{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width: 50%;
+	border: 1px solid gray;
+	background-color: #EEFFFF
+}
+
+.table1_tr1_td1{
+	color: darkblue;
+	font-size: 20px;
+	font-family: "MS Pゴシック";
+	border-bottom: 1px solid darkgray;
+	text-align: center;
+}
+
+.table1_tr2_td1{
+	font-size: 17px;
+	position: relative;
+	left: 10px;
+}
+
+.table1_tr2_td2{
+	text-align: right;
+}
+
+.table1_tr2_td2_span{
+	background-color: red;
+	color: white;
+	border-radius: 5px;
+	padding: 3px;
+	position: relative;
+	right: 40px;
+}
+
+.table1_tr3{
+	background-color: #fff;
+	border-top: 1px solid darkgray;
+	border-bottom: 1px solid darkgray;
+}
+
+.table1_tr3_td1_text{
+	width: 45%;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+.table1_tr3_td1_submit{
+	height: 28px;
+	border-radius: 5px;
+	border-color: lightgrey;
+	position: relative;
+	left: -4px;
+	top: 1px;
+}
+
+.table1_tr4_td1{
+	font-size: 17px;
+	position: relative;
+	left: 10px;
+}
+
+.table1_tr4_td2{
+	text-align: right;
+}
+
+.table1_tr4_td2_span{
+	background-color: red;
+	color: white;
+	border-radius: 5px;
+	padding: 3px;
+	position: relative;
+	right: 40px;
+}
+
+.table1_tr5{
+	background-color: #fff;
+	border-top: 1px solid darkgray;
+	border-bottom: 1px solid darkgray;
+}
+
+.text_class{
+	width: 20%;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+img.ui-datepicker-trigger{
+	cursor: pointer;
+	margin-left: 3px!important;
+	margin-top: -5px!important;
+	vertical-align: middle;
+	width: 25px;
+	height: 25px;
+}
+
+.table1_tr6_td1{
+	font-size: 17px;
+	position: relative;
+	left: 10px;
+}
+
+.table1_tr6_td2{
+	text-align: right;
+}
+
+.table1_tr6_td2_span{
+	background-color: red;
+	color: white;
+	border-radius: 5px;
+	padding: 3px;
+	position: relative;
+	right: 40px;
+}
+
+.table1_tr7{
+	background-color: #fff;
+	border-top: 1px solid darkgray;
+	border-bottom: 1px solid darkgray;
+}
+
+.table1_tr7_td1_text{
+	width: 20%;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+.table1_tr8_td1{
+	font-size: 17px;
+	position: relative;
+	left: 10px;
+}
+
+.table1_tr8_td2{
+	text-align: right;
+}
+
+.table1_tr8_td2_span{
+	background-color: red;
+	color: white;
+	border-radius: 5px;
+	padding: 3px;
+	position: relative;
+	right: 40px;
+}
+
+.table1_tr9{
+	background-color: #fff;
+	border-top: 1px solid darkgray;
+	border-bottom: 1px solid darkgray;
+}
+
+.table1_tr10_td1{
+	font-size: 17px;
+	position: relative;
+	left: 10px;
+}
+
+.table1_tr10_td2{
+	text-align: right;
+}
+
+.table1_tr10_td2_span{
+	background-color: red;
+	color: white;
+	border-radius: 5px;
+	padding: 3px;
+	position: relative;
+	right: 40px;
+}
+
+.table1_tr11{
+	background-color: #fff;
+	border-top: 1px solid darkgray;
+	border-bottom: 1px solid darkgray;
+}
+
+.table1_tr11_td1{
+	white-space: pre-wrap;
+}
+
+.table1_tr12_td1{
+	font-size: 17px;
+	position: relative;
+	left: 10px;
+}
+
+.table1_tr12_td2{
+	text-align: right;
+}
+
+.table1_tr12_td2_span{
+	background-color: red;
+	color: white;
+	border-radius: 5px;
+	padding: 3px;
+	position: relative;
+	right: 40px;
+}
+
+.table1_tr13{
+	background-color: #fff;
+	border-top: 1px solid darkgray;
+	border-bottom: 1px solid darkgray;
+}
+
+.table1_tr13_td1_text{
+	width: 20%;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+.button_submit_reset{
+	margin-left: 20%;
+	border-color: lightgray;
+	border-radius: 5px;
+}
+
+.button_submit{
+	border-color: lightgray;
+	border-radius: 5px;
+}

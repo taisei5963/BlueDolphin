@@ -1,0 +1,101 @@
+.body{
+	background-color: #eee;
+}
+
+.sub_header{
+	text-align: right;
+	background-color: darkblue;
+	width: 100%;
+	height: 6mm;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+}
+
+.name{
+	color: white;
+	margin-right: 20px;
+}
+
+.logout{
+	color: white;
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+.logout:hover{
+	background-color: darkblue;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.main_header{
+	width: 100%;
+	background-color: rgb(203, 228, 250);
+	height: 15mm;
+	position: fixed;
+	top: 6mm;
+	left: 0mm;
+	z-index: 998;
+}
+
+h1.title{
+	font-family: 'Amatic SC', cursive;
+	font-size: 18pt;
+	color: darkblue;
+	margin-left: 10px;
+	margin-top: 8px;
+}
+
+.nav-link{
+	color: darkblue;
+}
+
+.nav-link:hover{
+	background-color: rgba(0, 0, 170, 0.2);
+	color: darkblue;
+}
+
+.context{
+	margin-top: 100px;
+	font-weight: 700;
+	font-family: "ＭＳ 明朝";
+}
+
+.content1{
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+.table1{
+	position: relative;
+	top: 10px;
+	left: 10px;
+	width: 90%;
+	text-align: center;
+}
+
+.table1_tr1{
+	background-color: royalblue;
+	color: #fff;
+	text-align: center;
+}
+
+.table1_tr2:nth-child(odd){
+	background-color: #fff;
+}
+
+.table1_tr2_td1{
+	background-color: aliceblue;
+	color: royalblue;
+}
+
+.status_select{
+	width: 150px;
+	height: 30px;
+	background-color: #bddfff;
+	border-radius: 20px;
+	border: 2px solid #56ADFF;
+}
