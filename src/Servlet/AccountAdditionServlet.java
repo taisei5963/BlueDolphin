@@ -1,6 +1,7 @@
 package Servlet;
 
 import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 
 import javax.servlet.ServletException;
@@ -14,15 +15,17 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import DAO.NewAccountDAO;
+import Other.StringEncrypt;
 
 /**
- *ログイン情報を基にシステムへのログイン判定を行うサーブレットクラス
+ * 新規アカウント追加処理を行うサーブレットクラス
  */
 @WebServlet("/AccountAdditionServlet")
 public class AccountAdditionServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static final Logger log = LogManager.getLogger(AccountAdditionServlet.class);
 	private static final String SQLEXCEPTION = "SQLException occured";
+	private static final String NOSUCHALGORITHMEXCEPTION = "NoSuchAlgorithmException occurred";
 
 	/**
 	 * doPostメソッドを呼び出すメソッド
@@ -67,15 +70,24 @@ public class AccountAdditionServlet extends HttpServlet {
 		
 		//処理内容格納用変数宣言
 		String process_result = null;
+		String hashPass = null;
 		
-		//DAOクラスのインスタンス取得
+		//各クラスのインスタンス取得
 		NewAccountDAO ndao = NewAccountDAO.getInstance();
+		StringEncrypt se = StringEncrypt.getInstance();
+		
 		try {
+			//登録するパスワードを暗号化
+			hashPass = se.getHashEncrypt(pass);
 			ndao.dbConenect();
 			ndao.createSt();
-			result = ndao.setNewAccountInfo(name, num, email, pass, authority);
+			result = ndao.setNewAccountInfo(name, num, email, hashPass, authority);
 		} catch (SQLException e) {
 			log.error(SQLEXCEPTION);
+			e.printStackTrace();
+			return;
+		} catch (NoSuchAlgorithmException e) {
+			log.error(NOSUCHALGORITHMEXCEPTION);
 			e.printStackTrace();
 			return;
 		} finally {

@@ -1,6 +1,7 @@
 package Servlet;
 
 import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
@@ -16,6 +17,7 @@ import org.apache.logging.log4j.Logger;
 
 import Bean.LoginBean;
 import DAO.LoginDAO;
+import Other.StringEncrypt;
 
 /**
  *ログイン情報を基にシステムへのログイン判定を行うサーブレットクラス
@@ -27,6 +29,7 @@ public class LoginServlet extends HttpServlet {
 	//ログ出力文言宣言
 	private static final String SQLEXCEPTION = "SQLException occurred";
 	private static final String NULLPOINTEREXCEPTION = "NullPointerException occurred";
+	private static final String NOSUCHALGORITHMEXCEPTION = "NoSuchAlgorithmException occurred";
 
 	/**
 	 * doPostメソッドを呼び出すメソッド
@@ -64,9 +67,12 @@ public class LoginServlet extends HttpServlet {
 		//入力情報の取得
 		String email = req.getParameter("mail");
 		String pass = req.getParameter("pass");
+		
+		String hashPass = null;
 
-		//DAOクラスのインスタンス化の生成
+		//クラスのインスタンス取得
 		LoginDAO d1 = LoginDAO.getInstance();
+		StringEncrypt se = StringEncrypt.getInstance();
 		
 		//ログイン情報を元にユーザ情報を取得
 		//Exception発生時は、ユーザに戻る
@@ -84,9 +90,11 @@ public class LoginServlet extends HttpServlet {
 		log.info("userlist : {}", userlist);
 
 		try {
+			//入力パスワードの暗号化
+			hashPass = se.getHashEncrypt(pass);
 			for (LoginBean lb : userlist) {
 				//ログイン成功
-				if ((email.equals(lb.getEmail())) && (pass.equals(lb.getPassword()))) {
+				if ((email.equals(lb.getEmail())) && (hashPass.equals(lb.getPassword()))) {
 					//ユーザ情報をセッションへ渡す
 					session.setAttribute("userlist", userlist);
 					log.info("LOGIN SUCCESSED.");
@@ -96,6 +104,16 @@ public class LoginServlet extends HttpServlet {
 			}
 		} catch (NullPointerException e) {
 			log.error(NULLPOINTEREXCEPTION);
+			e.printStackTrace();
+			session.setAttribute("email", email);
+			resp.sendRedirect("login_mistake.jsp");
+		} catch (NoSuchAlgorithmException e) {
+			log.error(NOSUCHALGORITHMEXCEPTION);
+			e.printStackTrace();
+			session.setAttribute("email", email);
+			resp.sendRedirect("login_mistake.jsp");
+		} catch (Exception e) {
+			log.error("ログインエラー", e.getMessage());
 			e.printStackTrace();
 			session.setAttribute("email", email);
 			resp.sendRedirect("login_mistake.jsp");

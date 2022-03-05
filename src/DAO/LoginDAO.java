@@ -1,5 +1,6 @@
 package DAO;
 
+import java.security.NoSuchAlgorithmException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -10,6 +11,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import Bean.LoginBean;
+import Other.StringEncrypt;
 
 /**
  * 社員基本情報データベースと接続するためのDAOクラス
@@ -23,6 +25,7 @@ public class LoginDAO {
 	private static final Logger log = LogManager.getLogger(LoginDAO.class);
 	//ログ出力文言宣言
 	private static final String SQLEXCEPTION = "SQLException occurred";
+	private static final String NOSUCHALGORITHMEXCEPTION = "NoSuchAlgorithmException occurred";
 	private static final String DBWORDING = "Values ​​do not match";
 
 	//データベース接続時の各変数宣言
@@ -93,17 +96,27 @@ public class LoginDAO {
 	public ArrayList<LoginBean> login_chk(String email, String pass) throws SQLException {
 		log.info("login_chk start");
 		
+		StringEncrypt se = StringEncrypt.getInstance();
+		String hashPass = null;
+		try {
+			hashPass = se.getHashEncrypt(pass);
+		} catch (NoSuchAlgorithmException e) {
+			log.error(NOSUCHALGORITHMEXCEPTION);
+			e.printStackTrace();
+			return null;
+		}
+		
 		//取得データ格納用リストのインスタンス生成
 		ArrayList<LoginBean> loginList = new ArrayList<>();
 		
 		//SQL文
-		String sql = "select emp_num, emp_name, emp_mail, emp_pass, authority from employee where emp_mail='" + email + "' and emp_pass='" + pass + "';";
+		String sql = "select emp_num, emp_name, emp_mail, emp_pass, authority from employee where emp_mail='" + email + "' and emp_pass='" + hashPass + "';";
 		rs = st.executeQuery(sql);
 		log.debug("rs:{}", rs);
 		//データベースから該当の１レコード分を取得し、データベースの値と比較
 		if(rs.next()) {
 			if(email.equals(rs.getString("emp_mail"))) {
-				if(pass.equals(rs.getString("emp_pass"))) {
+				if(hashPass.equals(rs.getString("emp_pass"))) {
 					//LoginBeanクラスのインスタンス生成
 					LoginBean lb = new LoginBean();
 					lb.setNumber(rs.getInt("emp_num"));
@@ -112,7 +125,13 @@ public class LoginDAO {
 					lb.setPassword(rs.getString("emp_pass"));
 					lb.setAuthority(rs.getInt("authority"));
 					loginList.add(lb);
+				} else {
+					log.error("パスワードが一致しませんでした。");
+					return null;
 				}
+			} else {
+				log.error("ログインIDが一致しませんでした。");
+				return null;
 			}
 		} else {
 			log.error(DBWORDING);
